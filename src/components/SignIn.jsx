@@ -14,7 +14,7 @@ const SignIn = () => {
         alert("Login successfull! and thank your for login");
         const lastSignInTime = result?.user?.metadata?.lastSignInTime;
         const updateUser = { email, lastSignInTime };
-        fetch("http://localhost:5000/users", {
+        fetch("https://coffee-store-server-sand-xi.vercel.app/users", {
           method: "PATCH",
           headers: {
             "content-type": "application/json",
