@@ -11,7 +11,7 @@ const SignIn = () => {
     console.log(email, password);
     userSignIn(email, password)
       .then((result) => {
-        alert("Login successfull!");
+        alert("Login successfull! and thank your for login");
         const lastSignInTime = result?.user?.metadata?.lastSignInTime;
         const updateUser = { email, lastSignInTime };
         fetch("http://localhost:5000/users", {
